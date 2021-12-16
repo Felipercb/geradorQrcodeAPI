@@ -14,7 +14,7 @@ app = Flask(__name__)
 @app.route('/')
 # ‘/’ URL is bound with hello_world() function.
 def hello_world():
-	return send_file('qrCodes/agendamento.png', mimetype='image/png', as_attachment=True)
+	return 'Hello'
 
 @app.route('/teste', methods = ['POST'])
 def ola():
