@@ -6,10 +6,6 @@ def gerarQr(responsavel, evento, descricao):
     fontTitulo = ImageFont.truetype("fonts/ComicSansMS3.ttf", 20) 
     fontNormal = ImageFont.truetype("fonts/ComicSansMS3.ttf", 15)
 
-    # responsavel = 'José da Silva Dias'
-    # evento = 'Encerramento do ano'
-    # descricao = 'Esse evento tem por finalidade realizar uma celebração\npara decretar o fim do ano letivo'
-
     qr = qrcode.QRCode(box_size=4)
     qr.add_data('Nome do Responsável: ' + responsavel)
     qr.make()
