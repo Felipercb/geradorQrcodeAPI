@@ -2,6 +2,7 @@ import qrcode
 from PIL import Image, ImageFont, ImageDraw
 
 def gerarQr(responsavel, evento, descricao):
+    
     background = Image.open('backgrounds/background3.jpg') # abrindo o background.
     fontTitulo = ImageFont.truetype("fonts/ComicSansMS3.ttf", 20) 
     fontNormal = ImageFont.truetype("fonts/ComicSansMS3.ttf", 15)

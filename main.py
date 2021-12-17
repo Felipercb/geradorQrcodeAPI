@@ -15,6 +15,5 @@ def qrcode():
 	except:
 		return 'Verifique seus parâmetros'
 
-
 if __name__ == '__main__':
 	app.run(debug=True)
